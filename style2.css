@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+}
+body{
+    background-image: url('bgg.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 110vh;
+    position: relative;
+    background-repeat: no-repeat;
+}
+header{
+    position: absolute;
+    text-align: center;
+    width: 75%;
+    left: 12%;
+    top: 2rem;
+}
+header h1{
+    font-size: 30px;
+}
+.empty{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: -1;
+}
+
+.contant{
+    display: flex;
+    min-height: 110vh;
+}
+.contant section{
+    margin-top: 8vh;
+    margin-left: 20vh;
+}
+.contant-form{
+    margin-top: 7rem;
+}
+section i{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255,255,255,0.8);
+    color: black;
+    text-align: center;
+    text-align-last: center;
+}
+.forms{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 50%;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+}
+
+.forms .contact-forms input{
+    width: 30rem;
+    background-color: transparent;
+    border: 0px;
+    border: transparent;
+    margin: 20px;
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 2px solid #fff;
+}
+.forms .contact-forms input ~ p{
+    position: absolute;
+    left: 20px;
+    transition: 0.9s ease-in-out;
+    margin-top: 2px;
+}
+.forms .contact-forms input:focus ~p{
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+.forms .contact-forms textarea{
+    width: 30rem;
+    border: 0px;
+    background-color: transparent;
+    margin: 20px;
+    font-size: 17px;
+    border-bottom: 2px solid white;
+}
+.forms .contact-forms textarea ~ p
+{
+    position: absolute;
+    left: 20px;
+    margin-top:0px;
+    transition: 0.9s ease-in-out;
+}
+.forms .contact-forms textarea:focus ~p{
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+.forms .contact-forms input[type=submit]{
+    background-color: dodgerblue;
+    border: 2px solid dodgerblue;
+    font-size: 18px;
+    width: 50%;
+    height: 40px;
+    margin-top: 50px;
+}
+.forms .contact-forms input[type=submit]:hover{
+    background-color: transparent;
+    color: dodgerblue;
+}
